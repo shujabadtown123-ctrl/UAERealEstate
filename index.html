@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Real Estate | Dubai & UAE</title>
+    <meta name="description"
+        content="Find the best luxury apartments, villas, and commercial properties in Dubai, UAE. 10+ years of experience in real estate.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/luxe_company_logo.png" alt="Luxe UAE Company Logo"
+                style="height: 40px; border-radius: 5px;">
+            <span>LuxeUAE Properties</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#developers">Developers</a>
+            <a href="#properties">Find Properties</a>
+            <a href="#rentals">Rentals</a>
+            <a href="#contact">Contact Us</a>
+
+            <div class="language-selector">
+                <i class="fa-solid fa-globe"></i>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="ur">اردو</option>
+                    <option value="hi">हिंदी</option>
+                    <option value="ar">العربية</option>
+                    <option value="local">Emirati (Local)</option>
+                </select>
+            </div>
+        </nav>
+        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Exceptional <span class="highlight">Properties</span> In Dubai & UAE</h1>
+            <p>Your gateway to premium luxury living and profitable investments.</p>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h2>10+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-box">
+                    <h2>5000+</h2>
+                    <p>Properties Sold</p>
+                </div>
+                <div class="stat-box">
+                    <h2>99%</h2>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+            <a href="#properties" class="btn btn-primary">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Top Developers Section -->
+    <section class="section" id="developers">
+        <div class="container">
+            <h2 class="section-title">Partnered with Top Developers</h2>
+            <div class="developers-grid">
+                <div class="dev-card">
+                    <h3>Emaar Fictitious</h3>
+                    <p>Leading luxury spaces</p>
+                </div>
+                <div class="dev-card">
+                    <h3>Al Habtoor Mock</h3>
+                    <p>Defining skylines</p>
+                </div>
+                <div class="dev-card">
+                    <h3>Nakheel Dummy</h3>
+                    <p>Connecting islands & homes</p>
+                </div>
+                <div class="dev-card">
+                    <h3>Damac Proxy</h3>
+                    <p>Elite property standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Properties Section -->
+    <section class="section bg-light" id="properties">
+        <div class="container">
+            <h2 class="section-title">Popular Buildings & Properties (For Sale)</h2>
+            <p class="section-subtitle">Stunning 3D HD Quality properties with premium finishes across the UAE.</p>
+
+            <div class="property-grid">
+                <!-- Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/modern_studio_apartment.png" alt="Studio Apartment 3D HD">
+                        <span class="badge">AED 850,000</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Burj Al Fictitious Studio</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Downtown Dubai</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> Studio</span>
+                            <span><i class="fa-solid fa-bath"></i> 1 Washroom</span>
+                        </div>
+                        <p class="desc">A beautiful high-end studio apartment with elegant wood and marble finishes,
+                            perfect for individuals.</p>
+                        <div class="contact-text">Contact for full 3D Tour & Details</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Burj Al Fictitious Studio')">Get Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/luxury_apartment_interior.png" alt="Luxury Apartment 3D HD">
+                        <span class="badge">AED 1,950,000</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Marina Mock Apartments</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Dubai Marina</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Washrooms</span>
+                        </div>
+                        <p class="desc">Luxury modern apartment overlooking the city skyline with plush furniture and
+                            large windows.</p>
+                        <div class="contact-text">Contact for VIP viewing</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Marina Mock Apartments')">Get Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/dubai_luxury_villa.png" alt="Luxury Villa 3D">
+                        <span class="badge">AED 5,500,000</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>The Palm Dummy Villas</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Palm Jumeirah</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 4 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Washrooms</span>
+                        </div>
+                        <p class="desc">Exclusive white modern villa exterior with a blue swimming pool and elegant
+                            outdoor living spaces.</p>
+                        <div class="contact-text">Contact our villa specialists</div>
+                        <a href="#contact" class="btn btn-outline" onclick="selectProperty('The Palm Dummy Villas')">Get
+                            Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 4 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/dubai_commercial_office.png" alt="Commercial Office 3D">
+                        <span class="badge">AED 3,200,000</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Downtown Dummy Commercial</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Business Bay</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-briefcase"></i> Office Space</span>
+                            <span><i class="fa-solid fa-expand"></i> 2,500 sqft</span>
+                        </div>
+                        <p class="desc">Premium commercial office space in a modern high-rise glass building with
+                            panoramic views.</p>
+                        <div class="contact-text">Contact for commercial lease/buy</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Downtown Dummy Commercial')">Get Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 5 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/sale_waterfront_tower.png" alt="Waterfront Tower 3D">
+                        <span class="badge">AED 4,800,000</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Marina Skyline Tower</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Dubai Marina</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 3 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Washrooms</span>
+                        </div>
+                        <p class="desc">Futuristic luxury high-rise waterfront residential tower featuring sleek glass
+                            architecture and beautiful ocean views.</p>
+                        <div class="contact-text">Contact for exclusive luxury living</div>
+                        <a href="#contact" class="btn btn-outline" onclick="selectProperty('Marina Skyline Tower')">Get
+                            Details</a>
+                    </div>
+                </div>
+
+                <!-- Property 6 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/sale_royal_mansion.png" alt="Royal Mansion 3D">
+                        <span class="badge">AED 35,000,000</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Emirates Royal Mansion</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Emirates Hills</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 7 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 10 Washrooms</span>
+                        </div>
+                        <p class="desc">A sprawling ultra-luxury mansion blending modern and traditional Arabic
+                            architecture with a large private fountain.</p>
+                        <div class="contact-text">Contact for elite and vip viewing</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Emirates Royal Mansion')">Get Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rentals & Distance Section -->
+    <section class="section bg-light-alt" id="rentals">
+        <div class="container">
+            <h2 class="section-title">Premium Rentals & Distances</h2>
+            <p class="section-subtitle">Discover the most sought-after rental villas, apartments, and penthouses in the
+                UAE with 3D views.</p>
+
+            <div class="property-grid">
+                <!-- Rent Property 1 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/rent_dubai_villa.png" alt="Luxury Villa Dubai 3D HD">
+                        <span class="badge badge-rent">AED 25,000 / Month</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Jumeirah Luxury Villa</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Jumeirah, Dubai</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 4 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Washrooms</span>
+                        </div>
+                        <p class="desc">A beautiful luxury modern white villa to rent, featuring a private swimming pool
+                            and green lawn.</p>
+                        <ul class="distance-list">
+                            <li><i class="fa-solid fa-plane-departure"></i> 10 mins to DXB Airport</li>
+                            <li><i class="fa-solid fa-bag-shopping"></i> 5 mins to Dubai Mall</li>
+                        </ul>
+                        <div class="contact-text">Contact for rent inquiries</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Jumeirah Luxury Villa (Rent)')">Get Details</a>
+                    </div>
+                </div>
+
+                <!-- Rent Property 2 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/rent_sharjah_apartment.png" alt="Modern Apartment Sharjah 3D HD">
+                        <span class="badge badge-rent">AED 6,500 / Month</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Sharjah Oasis Apartments</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Al Majaz, Sharjah</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 2 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 2 Washrooms</span>
+                        </div>
+                        <p class="desc">A modern luxury apartment interior to rent with beautiful contemporary furniture
+                            and bright wide windows.</p>
+                        <ul class="distance-list">
+                            <li><i class="fa-solid fa-plane-departure"></i> 20 mins to DXB Airport</li>
+                            <li><i class="fa-solid fa-bag-shopping"></i> 10 mins to Sharjah City Centre</li>
+                        </ul>
+                        <div class="contact-text">Contact for rent inquiries</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Sharjah Oasis Apartments (Rent)')">Get Details</a>
+                    </div>
+                </div>
+
+                <!-- Rent Property 3 -->
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="images/rent_abudhabi_penthouse.png" alt="Luxury Penthouse Abu Dhabi 3D">
+                        <span class="badge badge-rent">AED 45,000 / Month</span>
+                    </div>
+                    <div class="property-details">
+                        <h3>Skyline Penthouse Suites</h3>
+                        <p class="location"><i class="fa-solid fa-location-dot"></i> Yas Island, Abu Dhabi</p>
+                        <div class="amenities">
+                            <span><i class="fa-solid fa-bed"></i> 3 Bedrooms</span>
+                            <span><i class="fa-solid fa-bath"></i> 4 Washrooms</span>
+                        </div>
+                        <p class="desc">A high-end luxury penthouse suite to rent featuring an open plan ultra-modern
+                            living room with panoramic views.</p>
+                        <ul class="distance-list">
+                            <li><i class="fa-solid fa-plane-departure"></i> 15 mins to Zayed Airport</li>
+                            <li><i class="fa-solid fa-bag-shopping"></i> 5 mins to Yas Marina</li>
+                        </ul>
+                        <div class="contact-text">Contact for rent inquiries</div>
+                        <a href="#contact" class="btn btn-outline"
+                            onclick="selectProperty('Skyline Penthouse Suites (Rent)')">Get Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section class="section bg-dark text-white" id="contact">
+        <div class="container form-container">
+            <h2 class="section-title text-white">We're Here for You</h2>
+            <p>Fill out the form below to request a call back from our UAE property experts.</p>
+            <form id="contact-form">
+                <div class="input-group">
+                    <input type="text" id="fullname" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                    <select id="purpose" required>
+                        <option value="">Purpose of Purchase</option>
+                        <option value="investment">Investment</option>
+                        <option value="living">Living / Personal Use</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="renting">Renting</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="budget" placeholder="Estimated Budget (AED)" required>
+                    <select id="location" required>
+                        <option value="">Preferred Location</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="abudhabi">Abu Dhabi</option>
+                        <option value="sharjah">Sharjah</option>
+                        <option value="ajman">Ajman</option>
+                    </select>
+                </div>
+                <textarea id="optional-note" rows="4"
+                    placeholder="Optional Note / Details about the property..."></textarea>
+                <button type="submit" class="btn btn-primary submit-btn">Request Call Back</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Properties</h4>
+                <ul>
+                    <li><a href="#">Buy Properties</a></li>
+                    <li><a href="#">Property Commercial</a></li>
+                    <li><a href="#">Luxury Homes</a></li>
+                    <li><a href="#">New Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Locations</h4>
+                <ul>
+                    <li><a href="#">Dubai Properties</a></li>
+                    <li><a href="#">Abu Dhabi Properties</a></li>
+                    <li><a href="#">Sharjah Properties</a></li>
+                    <li><a href="#">Ajman Properties</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company Info</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Head Office</h4>
+                <p><i class="fa-solid fa-map-marker-alt"></i> 45 Mockingbird St, Business Bay, Dubai, UAE</p>
+                <p><i class="fa-solid fa-envelope"></i> info@dubailuxefictitious.com</p>
+                <p><i class="fa-solid fa-phone"></i> +971 50 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 LuxeUAE Properties. Fictitious Data for Demo Purposes.</p>
+        </div>
+    </footer>
+
+    <!-- Fixed Popups -->
+    <a href="https://wa.me/971501234567" target="_blank" class="whatsapp-popup">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Start Quiz Trigger -->
+    <div class="quiz-trigger" id="quiz-btn">
+        <span>Start Quiz: Find Your Home!</span>
+        <i class="fa-solid fa-clipboard-question"></i>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div class="modal" id="quiz-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Property Finder Quiz</h2>
+            <p>Answer a few questions to find your perfect property in UAE.</p>
+            <form id="quiz-form">
+                <label>1. Are you looking to buy or rent?</label>
+                <select>
+                    <option>Buy</option>
+                    <option>Rent</option>
+                </select>
+                <br><br>
+                <label>2. What is your preferred state?</label>
+                <select>
+                    <option>Dubai</option>
+                    <option>Abu Dhabi</option>
+                    <option>Sharjah</option>
+                    <option>Ajman</option>
+                </select>
+                <br><br>
+                <button type="button" class="btn btn-primary" id="finish-quiz">See Results</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
